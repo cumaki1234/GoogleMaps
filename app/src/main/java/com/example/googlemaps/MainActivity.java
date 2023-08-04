@@ -8,6 +8,8 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -37,6 +39,8 @@ implements OnMapReadyCallback, GoogleMap.OnMapClickListener
                         .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         Lista=new ArrayList<>();
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url ="http://www.google.com";
 
 
 
