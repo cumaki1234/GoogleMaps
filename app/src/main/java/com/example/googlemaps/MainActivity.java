@@ -37,6 +37,10 @@ implements OnMapReadyCallback, GoogleMap.OnMapClickListener
                         .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         Lista=new ArrayList<>();
+
+
+
+
     }
 
     @Override
